@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" class="css" type="text/css">
+    <title>JavaScriptでAPIを叩く</title>
+</head>
+
+<body>
+    <header>
+        <div class="inner header-inner">
+            <h1>「OpenWeatherMap API」で<br>気象情報アプリの作成【JavaScript】
+            </h1>
+
+        </div>
+    </header>
+    <div class="inner container fv-container">
+        <p>全世界の気象情報を取得できるサービスの<a href="https://openweathermap.org/" target="_blank" class="api-link">OpenWeatherMap</a>
+            のAPIをJavaScriptで実装しました。<br>現在の天気情報と、その先3時間ごとに合計5日間の天気予報を取得しています。
+        </p>
+        <h3>【開発言語】</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <h3>【実行環境】</h3>
+        <ul>
+            <li>Node.js</li>
+        </ul>
+        <h3>【フレームワーク・ライブラリ】</h3>
+        <ul>
+            <li>Express</li>
+            <li>dotenv</li>
+            <li>node-fetch</li>
+        </ul>
+    </div>
+    </div>
+    <div class="inner">
+        <div class="inner weather-inner">
+            <div class="container current-weather-container fade-in">
+                <div class="current-weather-box">
+                    <h2>現在の東京都の天気</h2>
+                    <div class="current-api">
+                        <p class="date-txt"></p>
+                        <p>天気: <span class="api-txt current-api-weather"></span></p>
+                        <p class="weather-icon">
+                            <img src="" alt="">
+                        </p>
+                        <p>気温: <span class="api-txt current-api-temp"></span></p>
+                        <p>最高気温: <span class="api-txt current-api-temp_max"></span></p>
+                        <p>最低気温: <span class="api-txt current-api-temp_min"></span></p>
+                        <p>湿度: <span class="api-txt current-api-humidity"></span></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container forecast-weather-container fade-in">
+                <ul class="forecast-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-heading">「OpenWeatherMap API」で<br>気象情報アプリの作成【JavaScript】</p><small class="copyright">©2023 All Rights Reserved</small>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
