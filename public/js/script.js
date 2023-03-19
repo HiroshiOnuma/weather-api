@@ -32,7 +32,7 @@ async function dataGet() {
     const dateTxt = document.querySelector('.date-txt');
     const weatherIcon = document.querySelector('.weather-icon');
     const iconCode = json.weather[0].icon;
-    const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
+    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
     const iconImg = document.createElement('img');
     iconImg.src = iconUrl;
     const apiTemp = document.querySelector('.current-api-temp');
@@ -73,7 +73,7 @@ async function data5dayGet() {
         const dateString = `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日(${dayOfWeek}) ${date.getHours()}時`;
         const forecastLlist = document.querySelector('.forecast-list');
         const iconCode = json.list[i].weather[0].icon;
-        const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
+        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
         const iconImg = document.createElement('img');
         iconImg.src = iconUrl;
         const li = document.createElement('li');
