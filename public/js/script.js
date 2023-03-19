@@ -20,7 +20,7 @@ fadeInElements.forEach(element => {
 async function dataGet() {
     const response = await fetch('/api/current');
     const json = await response.json();
-    console.log(json);
+    // console.log(json);
     const currentWeatherContainer = document.querySelector('.current-weather-container');
     const weather = json.weather[0].main;
     const apiWeather = document.querySelector('.current-api-weather');
@@ -64,7 +64,7 @@ async function dataGet() {
 async function data5dayGet() {
     const response = await fetch('/api/forecast');
     const json = await response.json();
-    console.log(json);
+    // console.log(json);
 
     for (let i = 0; i < json.list.length; i++) {
         const dt = json.list[i].dt;
